@@ -16,7 +16,7 @@ pipeline {
 
             }
         }
-
+/*
 		stage ('Build') {
             steps { 
 			    sh """ 
@@ -24,7 +24,7 @@ pipeline {
 	 			   """
             }
         }
-
+*/
 		stage ('MobSF') {
 			steps {
 				sh '''curl -F \''$MOBSF_FILE\'' http://localhost:8000/api/v1/upload -H "X-Mobsf-Api-Key:$MOBSF_APIKEY" | awk -F\'[/"]\' \'{print $8}\' > hash.txt'''
