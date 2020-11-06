@@ -4,7 +4,7 @@ pipeline {
 	environment {
 
 		MOBSF_FILE="file=@/home/jm/projetos/InsecureBankv2/app/build/outputs/apk/debug/app-debug.apk'"
-		MOBSF_APIKEY="3f1e7dc5ce2fd7b2dc44931eebbe357151ed5081f39c279f13419bc80b352ee9"
+		MOBSF_APIKEY="6c0d5755f7e85a2c92ddddaf7dcee0d4dd73e7260d99869fb06feea3d9a8afc3"
 	}
     stages {
 
@@ -20,8 +20,7 @@ pipeline {
 		stage ('Build') {
             steps { 
 			    sh """ 
-					cd /home/jm/projetos/InsecureBankv2 && gradle clean assembleDebug 
-					// cd /home/jm/projetos/InsecureBankv2 && gradle clean assembleDebug --no-daemon -x lintVitalRelease
+					 cd /home/jm/projetos/InsecureBankv2 && gradle clean assembleDebug --no-daemon -x lintVitalRelease
 
 	 			   """
             }
