@@ -20,7 +20,7 @@ pipeline {
 		stage ('Build') {
             steps { 
 			    sh """ 
-					 cd /home/jm/projetos/InsecureBankv2 && gradle clean assembleDebug // --no-daemon -x lintVitalRelease
+					 cd /home/jm/projetos/InsecureBankv2 && gradle clean assembleDebug --no-daemon -x lintVitalRelease
 
 	 			   """
             }
