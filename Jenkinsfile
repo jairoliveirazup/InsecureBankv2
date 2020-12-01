@@ -12,7 +12,7 @@ pipeline {
             steps {
 	            echo "horus"
    		sh 'curl -fsSL https://horusec.io/bin/install.sh | bash'
-                sh 'horusec start -p="./" -e="true"'
+                sh 'horusec start -p="./"'
 
             }
         }
