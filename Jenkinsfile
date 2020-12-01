@@ -4,7 +4,7 @@ pipeline {
 	environment {
 
 		MOBSF_FILE="file=@/home/ubuntu/projetos/InsecureBankv2/app/build/outputs/apk/debug/app-debug.apk"
-		MOBSF_APIKEY="6c0d5755f7e85a2c92ddddaf7dcee0d4dd73e7260d99869fb06feea3d9a8afc3"
+		MOBSF_APIKEY="5237211d003aae0d396cc69c59ec3ece04c4f49c2ae4b31ef29a22c197b2ac36"
 	}
     stages {
 
